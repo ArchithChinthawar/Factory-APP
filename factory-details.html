@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Factory-Details</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="screen">
+      <div class="header">
+        <a href="factories.html" class="btn">&larr; Back</a>
+        <h2>Factory Details</h2>
+      </div>
+
+      <!-- Production Lines Section -->
+      <section class="production-lines">
+        <h3>Production Lines</h3>
+        <div class="lines-container">
+          <div class="line-card">
+            <h4>Assemble</h4>
+            <p>Process Time: 2 hours</p>
+          </div>
+          <div class="line-card">
+            <h4>Painting</h4>
+            <p>Process Time: 1.5 hours</p>
+          </div>
+          <div class="line-card">
+            <h4>Quality Assurance</h4>
+            <p>Process Time: 1 hour</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Factory Form -->
+      <form class="factory-form">
+        <h3>Factory Configuration</h3>
+
+        <div class="form-group">
+          <label for="shift-select">Select Shift</label>
+          <select id="shift-select" name="shift">
+            <option value="">Choose Shift</option>
+            <option value="morning">Morning Shift</option>
+            <option value="afternoon">Afternoon Shift</option>
+            <option value="night">Night Shift</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Production Status</label>
+          <label
+            ><input type="radio" name="production-status" value="running" />
+            Running</label
+          >
+          <label
+            ><input type="radio" name="production-status" value="stopped" />
+            Stopped</label
+          >
+        </div>
+
+        <div class="form-group">
+          <label>Select Departments</label>
+          <label
+            ><input type="checkbox" name="departments" value="maintenance" />
+            Maintenance</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="departments"
+              value="quality-control"
+            />
+            Quality Control</label
+          >
+          <label
+            ><input type="checkbox" name="departments" value="logistics" />
+            Logistics</label
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="notes">Additional Notes</label>
+          <textarea id="notes" name="notes" rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
